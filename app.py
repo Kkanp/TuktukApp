@@ -7,7 +7,7 @@
 import numpy as np
 import streamlit as st
 import pandas as pd
-import plotly.express as px
+#import plotly.express as px
 
 def check_dup(df, cols = ['Location', 'Date']):
 	if df.duplicated(subset = cols).any(): st.warning('WARNING: There are duplicated records!')
