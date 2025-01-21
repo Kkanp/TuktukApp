@@ -7,6 +7,7 @@
 import numpy as np
 import streamlit as st
 import pandas as pd
+import openpyxl
 #import plotly.express as px
 
 def check_dup(df, cols = ['Location', 'Date']):
