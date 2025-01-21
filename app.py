@@ -25,7 +25,7 @@ uploaded_file = st.file_uploader('Choose an XLSX file', type = 'xlsx')
 if uploaded_file:
 	st.markdown('---')
 
-	df = pd.read_excel(uploaded_file, engine = 'openpyxl')
+	df = pd.read_excel(uploaded_file) #engine = 'openpyxl'
 	df['Date'] = df['Date'].astype(str)
 	df = df[~df['Location'].isna()]
 	check_dup(df)
